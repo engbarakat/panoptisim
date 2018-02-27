@@ -255,7 +255,6 @@ def main():
             )
         )
 
-    print ("HASAN " + str(len(topo.graph.nodes())))
     simulation = Simulator(topo, args)
     simulation.run()
 

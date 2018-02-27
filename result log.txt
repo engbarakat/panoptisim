@@ -1,0 +1,236 @@
+C:\Python27\python.exe D:/ITIS/WS-16-17/Research_Project/Panopticon/panoptisim/panoptisim.py --pickle new --seedmapping 1 --seednextswitch 1 --tmsf max-50 --epsf 1 --epp 10 --tm 2004 --switchstrategy RAND --portstrategy default --maxvlans 512 --maxft 100000 --toupgrade 100
+2017-06-05 18:55:42,088 5244 panoptisim INFO Starting on host [DESKTOP-8MT5DBN]
+2017-06-05 18:55:42,102 5244 panoptisim INFO Starting with args: activefrontiersize: None
+	epp: 10
+	epsf: 1
+	exclude: ['config1515', 'config775', 'config842']
+	hostname: DESKTOP-8MT5DBN
+	linkutilthresh: 1
+	magicswitches: 0
+	maxft: 100000
+	maxvlans: 512
+	numprioports: 0
+	onlyupgrade: []
+	outputdir: D:\ITIS\WS-16-17\Research_Project\Panopticon\panoptisim
+	pattern: only-tm
+	pickletopo: True
+	pid: 5244
+	portstrategy: default
+	resumefromfile: None
+	seedmapping: 1
+	seednextswitch: 1
+	starttime: 1496681741.95
+	stop: False
+	switchstrategy: RAND
+	tm: 2004
+	tmsf: max-50
+	toupgrade: 100
+	upgraded: []
+	verbosity: INFO
+2017-06-05 18:55:42,102 5244 sim.topology INFO Unpickling [pickles/enterprise-tm2004max-5011.pickle]
+2017-06-05 18:55:53,062 5244 sim.topology INFO Unpickling Successful
+2017-06-05 18:55:53,063 5244 sim.simulator INFO Running Simulator
+2017-06-05 18:55:53,463 5244 sim.simulator INFO Iteration [1] Started [config454].
+2017-06-05 18:55:56,809 5244 sim.simulator INFO Iteration [1] done. [384/2591] SDN Ports in [3/3] secs
+2017-06-05 18:55:56,809 5244 sim.simulator INFO Iteration [2] Started [config1178].
+2017-06-05 18:56:00,450 5244 sim.simulator INFO Iteration [2] done. [431/2591] SDN Ports in [3/7] secs
+2017-06-05 18:56:00,450 5244 sim.simulator INFO Iteration [3] Started [config1316].
+2017-06-05 18:56:04,032 5244 sim.simulator INFO Iteration [3] done. [435/2591] SDN Ports in [3/10] secs
+2017-06-05 18:56:04,032 5244 sim.simulator INFO Iteration [4] Started [config1029].
+2017-06-05 18:56:07,690 5244 sim.simulator INFO Iteration [4] done. [442/2591] SDN Ports in [3/14] secs
+2017-06-05 18:56:07,690 5244 sim.simulator INFO Iteration [5] Started [config1514].
+2017-06-05 18:56:12,671 5244 sim.simulator INFO Iteration [5] done. [835/2591] SDN Ports in [4/19] secs
+2017-06-05 18:56:12,671 5244 sim.simulator INFO Iteration [6] Started [config424].
+2017-06-05 18:56:17,924 5244 sim.simulator INFO Iteration [6] done. [832/2591] SDN Ports in [5/24] secs
+2017-06-05 18:56:17,926 5244 sim.simulator INFO Iteration [7] Started [config61].
+2017-06-05 18:56:23,855 5244 sim.simulator INFO Iteration [7] done. [778/2591] SDN Ports in [5/30] secs
+2017-06-05 18:56:23,857 5244 sim.simulator INFO Iteration [8] Started [config1009].
+2017-06-05 18:56:30,186 5244 sim.simulator INFO Iteration [8] done. [698/2591] SDN Ports in [6/37] secs
+2017-06-05 18:56:30,186 5244 sim.simulator INFO Iteration [9] Started [config1062].
+2017-06-05 18:56:35,911 5244 sim.simulator INFO Iteration [9] done. [629/2591] SDN Ports in [5/42] secs
+2017-06-05 18:56:35,911 5244 sim.simulator INFO Iteration [10] Started [config38].
+2017-06-05 18:56:41,799 5244 sim.simulator INFO Iteration [10] done. [634/2591] SDN Ports in [5/48] secs
+2017-06-05 18:56:41,799 5244 sim.simulator INFO Iteration [11] Started [config1171].
+2017-06-05 18:56:47,792 5244 sim.simulator INFO Iteration [11] done. [637/2591] SDN Ports in [5/54] secs
+2017-06-05 18:56:47,792 5244 sim.simulator INFO Iteration [12] Started [config1566].
+2017-06-05 18:56:53,868 5244 sim.simulator INFO Iteration [12] done. [649/2591] SDN Ports in [6/60] secs
+2017-06-05 18:56:53,869 5244 sim.simulator INFO Iteration [13] Started [config1310].
+2017-06-05 18:57:00,865 5244 sim.simulator INFO Iteration [13] done. [679/2591] SDN Ports in [6/67] secs
+2017-06-05 18:57:00,865 5244 sim.simulator INFO Iteration [14] Started [config308].
+2017-06-05 18:57:07,677 5244 sim.simulator INFO Iteration [14] done. [679/2591] SDN Ports in [6/74] secs
+2017-06-05 18:57:07,677 5244 sim.simulator INFO Iteration [15] Started [config1238].
+2017-06-05 18:57:14,854 5244 sim.simulator INFO Iteration [15] done. [687/2591] SDN Ports in [7/81] secs
+2017-06-05 18:57:14,855 5244 sim.simulator INFO Iteration [16] Started [config434].
+2017-06-05 18:57:22,513 5244 sim.simulator INFO Iteration [16] done. [687/2591] SDN Ports in [7/89] secs
+2017-06-05 18:57:22,513 5244 sim.simulator INFO Iteration [17] Started [config937].
+2017-06-05 18:57:30,351 5244 sim.simulator INFO Iteration [17] done. [691/2591] SDN Ports in [7/97] secs
+2017-06-05 18:57:30,352 5244 sim.simulator INFO Iteration [18] Started [config1033].
+2017-06-05 18:57:38,088 5244 sim.simulator INFO Iteration [18] done. [713/2591] SDN Ports in [7/105] secs
+2017-06-05 18:57:38,088 5244 sim.simulator INFO Iteration [19] Started [config997].
+2017-06-05 18:57:46,164 5244 sim.simulator INFO Iteration [19] done. [715/2591] SDN Ports in [8/113] secs
+2017-06-05 18:57:46,165 5244 sim.simulator INFO Iteration [20] Started [config30].
+2017-06-05 18:57:54,457 5244 sim.simulator INFO Iteration [20] done. [731/2591] SDN Ports in [8/121] secs
+2017-06-05 18:57:54,457 5244 sim.simulator INFO Iteration [21] Started [config39].
+2017-06-05 18:58:02,818 5244 sim.simulator INFO Iteration [21] done. [731/2591] SDN Ports in [8/129] secs
+2017-06-05 18:58:02,818 5244 sim.simulator INFO Iteration [22] Started [config818].
+2017-06-05 18:58:11,440 5244 sim.simulator INFO Iteration [22] done. [745/2591] SDN Ports in [8/138] secs
+2017-06-05 18:58:11,441 5244 sim.simulator INFO Iteration [23] Started [config1130].
+2017-06-05 18:58:20,680 5244 sim.simulator INFO Iteration [23] done. [755/2591] SDN Ports in [9/147] secs
+2017-06-05 18:58:20,681 5244 sim.simulator INFO Iteration [24] Started [config1490].
+2017-06-05 18:58:30,099 5244 sim.simulator INFO Iteration [24] done. [757/2591] SDN Ports in [9/157] secs
+2017-06-05 18:58:30,099 5244 sim.simulator INFO Iteration [25] Started [config522].
+2017-06-05 18:58:39,881 5244 sim.simulator INFO Iteration [25] done. [769/2591] SDN Ports in [9/166] secs
+2017-06-05 18:58:39,882 5244 sim.simulator INFO Iteration [26] Started [config1119].
+2017-06-05 18:58:49,726 5244 sim.simulator INFO Iteration [26] done. [769/2591] SDN Ports in [9/176] secs
+2017-06-05 18:58:49,726 5244 sim.simulator INFO Iteration [27] Started [config392].
+2017-06-05 18:59:00,053 5244 sim.simulator INFO Iteration [27] done. [753/2591] SDN Ports in [10/186] secs
+2017-06-05 18:59:00,055 5244 sim.simulator INFO Iteration [28] Started [config930].
+2017-06-05 18:59:10,648 5244 sim.simulator INFO Iteration [28] done. [757/2591] SDN Ports in [10/197] secs
+2017-06-05 18:59:10,648 5244 sim.simulator INFO Iteration [29] Started [config428].
+2017-06-05 18:59:21,730 5244 sim.simulator INFO Iteration [29] done. [757/2591] SDN Ports in [11/208] secs
+2017-06-05 18:59:21,732 5244 sim.simulator INFO Iteration [30] Started [config882].
+2017-06-05 18:59:33,099 5244 sim.simulator INFO Iteration [30] done. [761/2591] SDN Ports in [11/220] secs
+2017-06-05 18:59:33,099 5244 sim.simulator INFO Iteration [31] Started [config1027].
+2017-06-05 18:59:44,709 5244 sim.simulator INFO Iteration [31] done. [761/2591] SDN Ports in [11/231] secs
+2017-06-05 18:59:44,710 5244 sim.simulator INFO Iteration [32] Started [config1025].
+2017-06-05 18:59:56,144 5244 sim.simulator INFO Iteration [32] done. [761/2591] SDN Ports in [11/243] secs
+2017-06-05 18:59:56,144 5244 sim.simulator INFO Iteration [33] Started [config938].
+2017-06-05 19:00:07,548 5244 sim.simulator INFO Iteration [33] done. [761/2591] SDN Ports in [11/254] secs
+2017-06-05 19:00:07,549 5244 sim.simulator INFO Iteration [34] Started [config635].
+2017-06-05 19:00:19,339 5244 sim.simulator INFO Iteration [34] done. [771/2591] SDN Ports in [11/266] secs
+2017-06-05 19:00:19,341 5244 sim.simulator INFO Iteration [35] Started [config704].
+2017-06-05 19:00:31,288 5244 sim.simulator INFO Iteration [35] done. [794/2591] SDN Ports in [11/278] secs
+2017-06-05 19:00:31,289 5244 sim.simulator INFO Iteration [36] Started [config1432].
+2017-06-05 19:00:43,555 5244 sim.simulator INFO Iteration [36] done. [803/2591] SDN Ports in [12/290] secs
+2017-06-05 19:00:43,555 5244 sim.simulator INFO Iteration [37] Started [config860].
+2017-06-05 19:00:56,539 5244 sim.simulator INFO Iteration [37] done. [809/2591] SDN Ports in [12/303] secs
+2017-06-05 19:00:56,539 5244 sim.simulator INFO Iteration [38] Started [config776].
+2017-06-05 19:01:09,887 5244 sim.simulator INFO Iteration [38] done. [809/2591] SDN Ports in [13/316] secs
+2017-06-05 19:01:09,888 5244 sim.simulator INFO Iteration [39] Started [config60].
+2017-06-05 19:01:23,506 5244 sim.simulator INFO Iteration [39] done. [828/2591] SDN Ports in [13/330] secs
+2017-06-05 19:01:23,506 5244 sim.simulator INFO Iteration [40] Started [config1503].
+2017-06-05 19:01:37,502 5244 sim.simulator INFO Iteration [40] done. [830/2591] SDN Ports in [13/344] secs
+2017-06-05 19:01:37,502 5244 sim.simulator INFO Iteration [41] Started [config404].
+2017-06-05 19:01:51,713 5244 sim.simulator INFO Iteration [41] done. [830/2591] SDN Ports in [14/358] secs
+2017-06-05 19:01:51,713 5244 sim.simulator INFO Iteration [42] Started [config447].
+2017-06-05 19:02:06,638 5244 sim.simulator INFO Iteration [42] done. [830/2591] SDN Ports in [14/373] secs
+2017-06-05 19:02:06,640 5244 sim.simulator INFO Iteration [43] Started [config450].
+2017-06-05 19:02:22,138 5244 sim.simulator INFO Iteration [43] done. [830/2591] SDN Ports in [15/389] secs
+2017-06-05 19:02:22,138 5244 sim.simulator INFO Iteration [44] Started [config381].
+2017-06-05 19:02:38,558 5244 sim.simulator INFO Iteration [44] done. [830/2591] SDN Ports in [16/405] secs
+2017-06-05 19:02:38,558 5244 sim.simulator INFO Iteration [45] Started [config432].
+2017-06-05 19:02:55,450 5244 sim.simulator INFO Iteration [45] done. [830/2591] SDN Ports in [16/422] secs
+2017-06-05 19:02:55,450 5244 sim.simulator INFO Iteration [46] Started [config709].
+2017-06-05 19:03:12,914 5244 sim.simulator INFO Iteration [46] done. [838/2591] SDN Ports in [17/439] secs
+2017-06-05 19:03:12,914 5244 sim.simulator INFO Iteration [47] Started [config538].
+2017-06-05 19:03:30,648 5244 sim.simulator INFO Iteration [47] done. [912/2591] SDN Ports in [17/457] secs
+2017-06-05 19:03:30,648 5244 sim.simulator INFO Iteration [48] Started [config1565].
+2017-06-05 19:03:48,279 5244 sim.simulator INFO Iteration [48] done. [912/2591] SDN Ports in [17/475] secs
+2017-06-05 19:03:48,279 5244 sim.simulator INFO Iteration [49] Started [config456].
+2017-06-05 19:04:06,223 5244 sim.simulator INFO Iteration [49] done. [912/2591] SDN Ports in [17/493] secs
+2017-06-05 19:04:06,223 5244 sim.simulator INFO Iteration [50] Started [config699].
+2017-06-05 19:04:24,151 5244 sim.simulator INFO Iteration [50] done. [912/2591] SDN Ports in [17/511] secs
+2017-06-05 19:04:24,153 5244 sim.simulator INFO Iteration [51] Started [config462].
+2017-06-05 19:04:42,947 5244 sim.simulator INFO Iteration [51] done. [912/2591] SDN Ports in [18/529] secs
+2017-06-05 19:04:42,947 5244 sim.simulator INFO Iteration [52] Started [config475].
+2017-06-05 19:05:30,638 5244 sim.simulator INFO Iteration [52] done. [915/2591] SDN Ports in [47/577] secs
+2017-06-05 19:05:30,640 5244 sim.simulator INFO Iteration [53] Started [config1403].
+2017-06-05 19:06:18,752 5244 sim.simulator INFO Iteration [53] done. [917/2591] SDN Ports in [48/625] secs
+2017-06-05 19:06:18,753 5244 sim.simulator INFO Iteration [54] Started [config1179].
+2017-06-05 19:07:07,434 5244 sim.simulator INFO Iteration [54] done. [919/2591] SDN Ports in [48/674] secs
+2017-06-05 19:07:07,434 5244 sim.simulator INFO Iteration [55] Started [config1013].
+2017-06-05 19:07:56,309 5244 sim.simulator INFO Iteration [55] done. [921/2591] SDN Ports in [48/723] secs
+2017-06-05 19:07:56,311 5244 sim.simulator INFO Iteration [56] Started [config474].
+2017-06-05 19:10:17,933 5244 sim.simulator INFO Iteration [56] done. [922/2591] SDN Ports in [141/864] secs
+2017-06-05 19:10:17,934 5244 sim.simulator INFO Iteration [57] Started [config395].
+2017-06-05 19:13:03,515 5244 sim.simulator INFO Iteration [57] done. [924/2591] SDN Ports in [165/1030] secs
+2017-06-05 19:13:03,515 5244 sim.simulator INFO Iteration [58] Started [config245].
+2017-06-05 19:15:42,848 5244 sim.simulator INFO Iteration [58] done. [940/2591] SDN Ports in [159/1189] secs
+2017-06-05 19:15:42,848 5244 sim.simulator INFO Iteration [59] Started [config1006].
+2017-06-05 19:18:40,137 5244 sim.simulator INFO Iteration [59] done. [942/2591] SDN Ports in [177/1367] secs
+2017-06-05 19:18:40,138 5244 sim.simulator INFO Iteration [60] Started [config1111].
+2017-06-05 19:21:36,799 5244 sim.simulator INFO Iteration [60] done. [944/2591] SDN Ports in [176/1543] secs
+2017-06-05 19:21:36,799 5244 sim.simulator INFO Iteration [61] Started [config331].
+2017-06-05 19:24:31,846 5244 sim.simulator INFO Iteration [61] done. [1004/2591] SDN Ports in [175/1718] secs
+2017-06-05 19:24:31,848 5244 sim.simulator INFO Iteration [62] Started [config171].
+2017-06-05 19:27:27,924 5244 sim.simulator INFO Iteration [62] done. [1020/2591] SDN Ports in [176/1894] secs
+2017-06-05 19:27:27,924 5244 sim.simulator INFO Iteration [63] Started [config1301].
+2017-06-05 19:30:32,486 5244 sim.simulator INFO Iteration [63] done. [1022/2591] SDN Ports in [184/2079] secs
+2017-06-05 19:30:32,486 5244 sim.simulator INFO Iteration [64] Started [config919].
+2017-06-05 19:33:37,688 5244 sim.simulator INFO Iteration [64] done. [1054/2591] SDN Ports in [185/2264] secs
+2017-06-05 19:33:37,690 5244 sim.simulator INFO Iteration [65] Started [config99].
+2017-06-05 19:36:44,693 5244 sim.simulator INFO Iteration [65] done. [1108/2591] SDN Ports in [187/2451] secs
+2017-06-05 19:36:44,694 5244 sim.simulator INFO Iteration [66] Started [config429].
+2017-06-05 19:39:55,250 5244 sim.simulator INFO Iteration [66] done. [1100/2591] SDN Ports in [190/2642] secs
+2017-06-05 19:39:55,250 5244 sim.simulator INFO Iteration [67] Started [config713].
+2017-06-05 19:43:15,158 5244 sim.simulator INFO Iteration [67] done. [1090/2591] SDN Ports in [199/2842] secs
+2017-06-05 19:43:15,160 5244 sim.simulator INFO Iteration [68] Started [config1276].
+2017-06-05 19:46:31,584 5244 sim.simulator INFO Iteration [68] done. [1092/2591] SDN Ports in [196/3038] secs
+2017-06-05 19:46:31,584 5244 sim.simulator INFO Iteration [69] Started [config959].
+2017-06-05 19:49:56,293 5244 sim.simulator INFO Iteration [69] done. [1107/2591] SDN Ports in [204/3243] secs
+2017-06-05 19:49:56,295 5244 sim.simulator INFO Iteration [70] Started [config1493].
+2017-06-05 19:53:18,318 5244 sim.simulator INFO Iteration [70] done. [1107/2591] SDN Ports in [202/3445] secs
+2017-06-05 19:53:18,319 5244 sim.simulator INFO Iteration [71] Started [config1513].
+2017-06-05 19:56:34,976 5244 sim.simulator INFO Iteration [71] done. [1113/2591] SDN Ports in [196/3641] secs
+2017-06-05 19:56:34,976 5244 sim.simulator INFO Iteration [72] Started [config397].
+2017-06-05 19:59:35,053 5244 sim.simulator INFO Iteration [72] done. [1113/2591] SDN Ports in [180/3821] secs
+2017-06-05 19:59:35,053 5244 sim.simulator INFO Iteration [73] Started [config1494].
+2017-06-05 20:02:56,118 5244 sim.simulator INFO Iteration [73] done. [1113/2591] SDN Ports in [201/4023] secs
+2017-06-05 20:02:56,119 5244 sim.simulator INFO Iteration [74] Started [config1223].
+2017-06-05 20:06:19,072 5244 sim.simulator INFO Iteration [74] done. [1119/2591] SDN Ports in [202/4226] secs
+2017-06-05 20:06:19,073 5244 sim.simulator INFO Iteration [75] Started [config402].
+2017-06-05 20:09:54,062 5244 sim.simulator INFO Iteration [75] done. [1119/2591] SDN Ports in [214/4440] secs
+2017-06-05 20:09:54,062 5244 sim.simulator INFO Iteration [76] Started [config1553].
+2017-06-05 20:13:28,489 5244 sim.simulator INFO Iteration [76] done. [1121/2591] SDN Ports in [214/4655] secs
+2017-06-05 20:13:28,489 5244 sim.simulator INFO Iteration [77] Started [config641].
+2017-06-05 20:16:47,194 5244 sim.simulator INFO Iteration [77] done. [1123/2591] SDN Ports in [198/4854] secs
+2017-06-05 20:16:47,194 5244 sim.simulator INFO Iteration [78] Started [config1333].
+2017-06-05 20:20:14,480 5244 sim.simulator INFO Iteration [78] done. [1129/2591] SDN Ports in [207/5061] secs
+2017-06-05 20:20:14,482 5244 sim.simulator INFO Iteration [79] Started [config250].
+2017-06-05 20:23:45,884 5244 sim.simulator INFO Iteration [79] done. [1137/2591] SDN Ports in [211/5272] secs
+2017-06-05 20:23:45,885 5244 sim.simulator INFO Iteration [80] Started [config403].
+2017-06-05 20:27:19,338 5244 sim.simulator INFO Iteration [80] done. [1139/2591] SDN Ports in [213/5486] secs
+2017-06-05 20:27:19,338 5244 sim.simulator INFO Iteration [81] Started [config1525].
+2017-06-05 20:30:53,953 5244 sim.simulator INFO Iteration [81] done. [1147/2591] SDN Ports in [214/5700] secs
+2017-06-05 20:30:53,954 5244 sim.simulator INFO Iteration [82] Started [config1166].
+2017-06-05 20:34:28,644 5244 sim.simulator INFO Iteration [82] done. [1155/2591] SDN Ports in [214/5915] secs
+2017-06-05 20:34:28,645 5244 sim.simulator INFO Iteration [83] Started [config446].
+2017-06-05 20:38:00,427 5244 sim.simulator INFO Iteration [83] done. [1155/2591] SDN Ports in [211/6127] secs
+2017-06-05 20:38:00,428 5244 sim.simulator INFO Iteration [84] Started [config935].
+2017-06-05 20:41:31,640 5244 sim.simulator INFO Iteration [84] done. [1167/2591] SDN Ports in [211/6338] secs
+2017-06-05 20:41:31,641 5244 sim.simulator INFO Iteration [85] Started [config1394].
+2017-06-05 20:45:08,867 5244 sim.simulator INFO Iteration [85] done. [1173/2591] SDN Ports in [217/6555] secs
+2017-06-05 20:45:08,867 5244 sim.simulator INFO Iteration [86] Started [config1589].
+2017-06-05 20:48:48,201 5244 sim.simulator INFO Iteration [86] done. [1213/2591] SDN Ports in [219/6775] secs
+2017-06-05 20:48:48,201 5244 sim.simulator INFO Iteration [87] Started [config471].
+2017-06-05 20:50:31,519 5244 sim.simulator INFO Iteration [87] done. [1246/2591] SDN Ports in [103/6878] secs
+2017-06-05 20:50:31,519 5244 sim.simulator INFO Iteration [88] Started [config1460].
+2017-06-05 20:52:15,233 5244 sim.simulator INFO Iteration [88] done. [1250/2591] SDN Ports in [103/6982] secs
+2017-06-05 20:52:15,233 5244 sim.simulator INFO Iteration [89] Started [config1157].
+2017-06-05 20:53:59,099 5244 sim.simulator INFO Iteration [89] done. [1262/2591] SDN Ports in [103/7086] secs
+2017-06-05 20:53:59,101 5244 sim.simulator INFO Iteration [90] Started [config779].
+2017-06-05 20:55:44,851 5244 sim.simulator INFO Iteration [90] done. [1266/2591] SDN Ports in [105/7191] secs
+2017-06-05 20:55:44,851 5244 sim.simulator INFO Iteration [91] Started [config1580].
+2017-06-05 20:57:21,855 5244 sim.simulator INFO Iteration [91] done. [1266/2591] SDN Ports in [97/7288] secs
+2017-06-05 20:57:21,857 5244 sim.simulator INFO Iteration [92] Started [config650].
+2017-06-05 20:58:58,798 5244 sim.simulator INFO Iteration [92] done. [1270/2591] SDN Ports in [96/7385] secs
+2017-06-05 20:58:58,799 5244 sim.simulator INFO Iteration [93] Started [config890].
+2017-06-05 21:00:27,522 5244 sim.simulator INFO Iteration [93] done. [1274/2591] SDN Ports in [88/7474] secs
+2017-06-05 21:00:27,523 5244 sim.simulator INFO Iteration [94] Started [config1205].
+2017-06-05 21:02:08,223 5244 sim.simulator INFO Iteration [94] done. [1278/2591] SDN Ports in [100/7575] secs
+2017-06-05 21:02:08,223 5244 sim.simulator INFO Iteration [95] Started [config1401].
+2017-06-05 21:03:53,062 5244 sim.simulator INFO Iteration [95] done. [1282/2591] SDN Ports in [104/7679] secs
+2017-06-05 21:03:53,062 5244 sim.simulator INFO Iteration [96] Started [config1453].
+2017-06-05 21:05:32,076 5244 sim.simulator INFO Iteration [96] done. [1286/2591] SDN Ports in [99/7779] secs
+2017-06-05 21:05:32,078 5244 sim.simulator INFO Iteration [97] Started [config1002].
+2017-06-05 21:07:08,492 5244 sim.simulator INFO Iteration [97] done. [1286/2591] SDN Ports in [96/7875] secs
+2017-06-05 21:07:08,493 5244 sim.simulator INFO Iteration [98] Started [config920].
+2017-06-05 21:08:48,325 5244 sim.simulator INFO Iteration [98] done. [1286/2591] SDN Ports in [99/7975] secs
+2017-06-05 21:08:48,325 5244 sim.simulator INFO Iteration [99] Started [config1347].
+2017-06-05 21:10:28,950 5244 sim.simulator INFO Iteration [99] done. [1292/2591] SDN Ports in [100/8075] secs
+2017-06-05 21:10:28,951 5244 sim.simulator INFO Iteration [100] Started [config961].
+2017-06-05 21:12:08,299 5244 sim.simulator INFO Iteration [100] done. [1298/2591] SDN Ports in [99/8175] secs
+2017-06-05 21:12:09,000 5244 sim.simulator INFO Finished simulation.run
+2017-06-05 21:12:09,002 5244 panoptisim INFO Finished Simulation
+
+Process finished with exit code 0
