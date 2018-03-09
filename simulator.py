@@ -364,6 +364,7 @@ class Simulator(object):
         # Iterate over every upgradable switch, according to the strategy
         #######################################################################
         strategy = self.args.switchstrategy
+        
 
         while (self.switch_selection(istate, strategy) > 0) and \
             istate.iterations_so_far() <= self.args.toupgrade:
@@ -491,6 +492,7 @@ class Simulator(object):
         """Determine the next switch in self.graph to designate as sdn
         according to strategy"""
         excluded = self.args.exclude
+        
 
         if len(self.args.onlyupgrade) > 0:
             switches = [sw for sw in self.args.onlyupgrade
@@ -529,6 +531,7 @@ class Simulator(object):
             return len(switches)
 
         if strategy == "TVOL":
+            
             switches = [(self.topo.endpoint_volume_to_node(n) + self.topo.endpoint_volume_from_node(n), n) for n in
                         self.graph.nodes()
                         if n not in istate.sdn_switches and n not in excluded]

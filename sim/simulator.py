@@ -8,6 +8,8 @@ import json
 import copy
 import logging
 import numpy as np
+import matplotlib
+import pylab as pl
 from time import time
 import random
 
@@ -16,6 +18,7 @@ import networkx as nx
 FORMAT = "%(asctime)s %(process)d %(name)s %(levelname)s %(message)s"
 logging.basicConfig(format=FORMAT)
 logger = logging.getLogger(__name__)
+verts =[]
 
 
 class IterationState(object):
@@ -277,6 +280,8 @@ class IterationState(object):
         result.update(paramsdict)
         result.update(link_results)
         result.update(stretch_results)
+        global verts
+        verts.append(self.last_upgraded_switch)
 
         #logger.info("{n} upgrades".format(n=result.get('upgrades')))
         logger.debug(
@@ -285,6 +290,10 @@ class IterationState(object):
                 if k != 'allpathstretch'])
         )
         self.results.append(result)
+
+        #with open('out.json', 'w') as f:
+            # data['new_key'] = [1, 2, 3]
+          #  json.dump(result, f)
 
 
     def dump_results(self, checkpoint=False):
@@ -298,14 +307,16 @@ class IterationState(object):
             filename = "/data/dan.levin/" + ".".join([args.hostname, args.pid, args.starttime])
             filename += ".partial.json"
             try:
-                file = gzip.open(filename, 'w')
+                #file = gzip.open(filename, 'w')
+                file = open(filename, 'w')
                 json.dump(self.results, file, indent=2)
                 file.close()
             except:
                 pass
         else:
             filename += ".final.json"
-            file = gzip.open(filename, 'w')
+            #file = gzip.open(filename, 'w')
+            file = open(filename, 'w')
             json.dump(self.results, file, indent=2)
             file.close()
 
@@ -434,8 +445,12 @@ class Simulator(object):
                        istate.duration(),
                        self.duration()))
 
+        self.topo.draw()
         istate.dump_results()
         logger.info("Finished simulation.run")
+        global verts
+        for p in verts: print (p)
+
 
 ################################################################################
 
@@ -504,6 +519,51 @@ class Simulator(object):
 
         if strategy == "VOL":
             switches = [(self.topo.egress_volumes_at_node(n),n) for n in
+                        self.graph.nodes()
+                        if n not in istate.sdn_switches and n not in excluded]
+
+            if len(switches) > 0:
+                value, switch = max(switches)
+                istate.upgrade_switch(switch)
+
+            return len(switches)
+
+        if strategy == "TVOL":
+            switches = [(self.topo.endpoint_volume_to_node(n) + self.topo.endpoint_volume_from_node(n), n) for n in
+                        self.graph.nodes()
+                        if n not in istate.sdn_switches and n not in excluded]
+
+            if len(switches) > 0:
+                value, switch = max(switches)
+                istate.upgrade_switch(switch)
+
+            return len(switches)
+
+
+        if strategy == "EVOLF":
+            switches = [(self.topo.endpoint_volume_from_node(n),n) for n in
+                        self.graph.nodes()
+                        if n not in istate.sdn_switches and n not in excluded]
+
+            if len(switches) > 0:
+                value, switch = max(switches)
+                istate.upgrade_switch(switch)
+
+            return len(switches)
+        
+        if strategy == "IVOLT":
+            switches = [(self.topo.endpoint_volume_to_node(n),n) for n in
+                        self.graph.nodes()
+                        if n not in istate.sdn_switches and n not in excluded]
+
+            if len(switches) > 0:
+                value, switch = max(switches)
+                istate.upgrade_switch(switch)
+
+            return len(switches)
+
+        if strategy == "VOLI":
+            switches = [(self.topo.ingress_volumes_at_node(n),n) for n in
                         self.graph.nodes()
                         if n not in istate.sdn_switches and n not in excluded]
 

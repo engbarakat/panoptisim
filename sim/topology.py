@@ -6,7 +6,6 @@ import json
 import logging
 import logging.config
 import networkx as nx
-import numpy
 import random
 import os
 import pickle
@@ -18,6 +17,7 @@ from traces.traces import trace_durations
 FORMAT="%(asctime)s %(process)d %(name)s %(levelname)s %(message)s"
 logging.basicConfig(format=FORMAT)
 logger = logging.getLogger(__name__)
+
 
 class Port(object):
     """keeps topological and volume state for an endpoint"""
@@ -421,6 +421,7 @@ class EnterpriseTopology(object):
         of node toward every other node in the graph
         """
         volume = 0
+        # global volumelist = []
 
         dstports = self.ports_on_switch(node)
         for dstport in dstports:
@@ -428,6 +429,8 @@ class EnterpriseTopology(object):
                 volume += port.volume_to(dstport)
 
         return volume
+
+
 
     def egress_volumes_at_node(self, node):
         """Returns the a list of traffic volume in bytes egressing from node
@@ -664,8 +667,8 @@ class EnterpriseTopology(object):
         nx.draw(self.graph,pos,node_color=node_color,
                 node_size=[100*(nx.degree(self.graph,x)**1.25) for x in self.graph.nodes()],
                 edge_color=['blue' for x,y,z in self.graph.edges(data=True)],
-                edge_cmap=plt.cm.Blues,
-                cmap=plt.cm.Blues)
+                edge_cmap=plt.cm.Reds,
+                cmap=plt.cm.Reds)
         plt.show()
 
     def vitalstats(self):

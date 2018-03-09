@@ -188,7 +188,7 @@ def get_parser():
     parser.add_argument("--verbosity", "-v",
                         help="set the logging level",
                         choices=['DEBUG', 'INFO', 'WARN', 'ERROR'],
-                        default='INFO',
+                        default='DEBUG',
                         type=str)
 
     return parser
@@ -203,6 +203,7 @@ def main():
     args = parser.parse_args()
 
     logger.setLevel(args.verbosity)
+    
 
     for module in ['sim.topology', 'sim.simulator']:
         lg = logging.getLogger(module)
