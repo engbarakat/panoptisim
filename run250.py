@@ -38,8 +38,8 @@ if __name__ == '__main__':
     swlist = []
     stra = ["VOL", "TVOL", "EVOLF", "IVOLT", "VOLI"]
     #stra = ["TVOL"]
-    vlans = [256, 512, 1024]
-    #vlans = [256]
+    #vlans = [256, 512, 1024]
+    vlans = [1024]
     i = 250
     for j in range (len(stra)):
         j =stra[j]
@@ -83,25 +83,25 @@ if __name__ == '__main__':
     for m in range(1, i+1):
         swlist.append(m)
     print swlist
-    fo = open("vol.txt", "wb")
+    fo = open("vol1024.txt", "wb")
     for a in plistvol:
-        fo.write(a + "\t")
+        fo.write(str(a) + "\t")
     fo.close()
-    fo = open("voli.txt", "wb")
+    fo = open("voli1024.txt", "wb")
     for a in plistvoli:
-        fo.write(a + "\t")
+        fo.write(str(a) + "\t")
     fo.close()
-    fo = open("tvol.txt", "wb")
+    fo = open("tvol1024.txt", "wb")
     for a in plisttvol:
-        fo.write(a + "\t")
+        fo.write(str(a) + "\t")
     fo.close()
-    fo = open("ivolt.txt", "wb")
+    fo = open("ivolt1024.txt", "wb")
     for a in plistivolt:
-        fo.write(a + "\t")
+        fo.write(str(a) + "\t")
     fo.close()
-    fo = open("evolf.txt", "wb")
+    fo = open("evolf1024.txt", "wb")
     for a in plistevolf:
-        fo.write(a + "\t")
+        fo.write(str(a) + "\t")
     fo.close()
 # 
 #     # zipped = zip(plist256,plist512,plist1024)

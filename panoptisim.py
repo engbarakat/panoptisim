@@ -188,7 +188,7 @@ def get_parser():
     parser.add_argument("--verbosity", "-v",
                         help="set the logging level",
                         choices=['DEBUG', 'INFO', 'WARN', 'ERROR'],
-                        default='DEBUG',
+                        default='INFO',
                         type=str)
 
     return parser

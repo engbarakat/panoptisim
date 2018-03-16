@@ -651,25 +651,27 @@ class EnterpriseTopology(object):
         return True
 
     def draw(self):
-        """Draw the topology"""
-        try:
-            import matplotlib.pyplot as plt
-        except ImportError:
-            logger.warning("matplotlib could not be found")
-            return
-        node_color = range(len(self.graph.nodes()))
-        for i, node in enumerate(self.graph.nodes(data=True)):
-            node, attr = node
-            if attr.get('is_router', False):
-                node_color[i] = 1000
+        pass
+#       """Draw the topology"""
+#         try:
+#             import matplotlib.pyplot as plt
+#         except ImportError:
+#             logger.warning("matplotlib could not be found")
+#             return
+#         node_color = range(len(self.graph.nodes()))
+#         for i, node in enumerate(self.graph.nodes(data=True)):
+#             node, attr = node
+#             if attr.get('is_router', False):
+#                 node_color[i] = 1000
+# 
+#         pos = nx.spring_layout(self.graph,iterations=200)
+#         nx.draw(self.graph,pos,node_color=node_color,
+#                 node_size=[100*(nx.degree(self.graph,x)**1.25) for x in self.graph.nodes()],
+#                 edge_color=['blue' for x,y,z in self.graph.edges(data=True)],
+#                 edge_cmap=plt.cm.Reds,
+#                 cmap=plt.cm.Reds)
+#         plt.show()
 
-        pos = nx.spring_layout(self.graph,iterations=200)
-        nx.draw(self.graph,pos,node_color=node_color,
-                node_size=[100*(nx.degree(self.graph,x)**1.25) for x in self.graph.nodes()],
-                edge_color=['blue' for x,y,z in self.graph.edges(data=True)],
-                edge_cmap=plt.cm.Reds,
-                cmap=plt.cm.Reds)
-        plt.show()
 
     def vitalstats(self):
         """Print vital statistics of the topology"""
