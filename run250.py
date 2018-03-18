@@ -14,7 +14,7 @@ pl.rc('figure',titlesize = 30)
 def runcmd(strnumber, strategy):
     output = subprocess.Popen('python panoptisim.py --pickle new --seedmapping 1 --seednextswitch 1'
                     ' --tmsf max-50 --epsf 1 --epp 10 --tm 2004 --switchstrategy ' + str(strategy) +
-                    ' --portstrategy default --maxvlans 1024'
+                    ' --portstrategy default --maxvlans 512'
                     ' --maxft 100000 --toupgrade ' + str(strnumber), shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE )
 
     return (output.communicate())
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     stra = ["VOL", "TVOL", "EVOLF", "IVOLT", "VOLI"]
     #stra = ["TVOL"]
     #vlans = [256, 512, 1024]
-    vlans = [1024]
+    vlans = [256]
     i = 250
     for j in range (len(stra)):
         j =stra[j]
@@ -83,23 +83,23 @@ if __name__ == '__main__':
     for m in range(1, i+1):
         swlist.append(m)
     print swlist
-    fo = open("vol1024.txt", "wb")
+    fo = open("vol512.txt", "wb")
     for a in plistvol:
         fo.write(str(a) + "\t")
     fo.close()
-    fo = open("voli1024.txt", "wb")
+    fo = open("voli512.txt", "wb")
     for a in plistvoli:
         fo.write(str(a) + "\t")
     fo.close()
-    fo = open("tvol1024.txt", "wb")
+    fo = open("tvol512.txt", "wb")
     for a in plisttvol:
         fo.write(str(a) + "\t")
     fo.close()
-    fo = open("ivolt1024.txt", "wb")
+    fo = open("ivolt512.txt", "wb")
     for a in plistivolt:
         fo.write(str(a) + "\t")
     fo.close()
-    fo = open("evolf1024.txt", "wb")
+    fo = open("evolf512.txt", "wb")
     for a in plistevolf:
         fo.write(str(a) + "\t")
     fo.close()
