@@ -14,7 +14,7 @@ pl.rc('figure',titlesize = 30)
 def runcmd(strnumber, strategy):
     output = subprocess.Popen('python panoptisim.py --pickle new --seedmapping 1 --seednextswitch 1'
                     ' --tmsf max-50 --epsf 1 --epp 10 --tm 2004 --switchstrategy ' + str(strategy) +
-                    ' --portstrategy default --maxvlans 512'
+                    ' --portstrategy default --maxvlans 1000'
                     ' --maxft 100000 --toupgrade ' + str(strnumber), shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE )
 
     return (output.communicate())
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     plistivolt = []
     plistvoli = []
     swlist = []
-    stra = ["VOL", "TVOL", "EVOLF", "IVOLT", "VOLI"]
+    stra = ["RAND"]
     #stra = ["TVOL"]
     #vlans = [256, 512, 1024]
     vlans = [256]
@@ -69,7 +69,7 @@ if __name__ == '__main__':
                 percentage = Division  * 100
             #print percentage
 
-            if j == "VOL":
+            if j == "RAND":
                 plistvol.append(percentage)
             elif j == "TVOL":
                 plisttvol.append(percentage)
@@ -82,27 +82,27 @@ if __name__ == '__main__':
 
     for m in range(1, i+1):
         swlist.append(m)
-    print swlist
-    fo = open("vol512.txt", "wb")
+    #print swlist
+    fo = open("rand1000.txt", "wb")
     for a in plistvol:
         fo.write(str(a) + "\t")
     fo.close()
-    fo = open("voli512.txt", "wb")
-    for a in plistvoli:
-        fo.write(str(a) + "\t")
-    fo.close()
-    fo = open("tvol512.txt", "wb")
-    for a in plisttvol:
-        fo.write(str(a) + "\t")
-    fo.close()
-    fo = open("ivolt512.txt", "wb")
-    for a in plistivolt:
-        fo.write(str(a) + "\t")
-    fo.close()
-    fo = open("evolf512.txt", "wb")
-    for a in plistevolf:
-        fo.write(str(a) + "\t")
-    fo.close()
+#     fo = open("voli512.txt", "wb")
+#     for a in plistvoli:
+#         fo.write(str(a) + "\t")
+#     fo.close()
+#     fo = open("tvol512.txt", "wb")
+#     for a in plisttvol:
+#         fo.write(str(a) + "\t")
+#     fo.close()
+#     fo = open("ivolt512.txt", "wb")
+#     for a in plistivolt:
+#         fo.write(str(a) + "\t")
+#     fo.close()
+#     fo = open("evolf512.txt", "wb")
+#     for a in plistevolf:
+#         fo.write(str(a) + "\t")
+#     fo.close()
 # 
 #     # zipped = zip(plist256,plist512,plist1024)
 #     # print zipped
